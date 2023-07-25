@@ -119,7 +119,7 @@ nav>ul {
 }
 
 .main h1 {
-    background: url(/imges/skymain2.jpg);
+    background: url("https://soobinn.github.io/PortFolio/imges/skymain2.jpg");
     background-size: 100% 120%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
