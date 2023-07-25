@@ -240,7 +240,7 @@ nav>ul {
 
     width: 80%;
     height: 600px;
-    background-image: url(/imges/sky.jpg);
+    background-image: url("https://soobinn.github.io/PortFolio/imges/sky.jpg");
     position: absolute;
     background-attachment: fixed;
     background-position: center;
@@ -515,18 +515,18 @@ nav>ul {
 }
 
 .img1 {
-    background-image: url('/imges/sandira.JPG');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/sandira.JPG');
 }
 
 .img2 {
-    background-image: url('/imges/garasani.png');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/garasani.png');
 }
 
 .img3 {
-    background-image: url('/imges/img3.png');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/img3.png');
 }
 .img4 {
-    background-image: url('/imges/sandira.JPG');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/sandira.JPG');
 }
 
 
@@ -558,7 +558,7 @@ nav>ul {
 .contact {
     width: 100%;
     height: 100vh;
-    background-image: url(/imges/contact.jpg);
+    background-image: url("https://soobinn.github.io/PortFolio/imges/contact.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
