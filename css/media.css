@@ -1,0 +1,262 @@
+/* 1200px */
+
+@media screen and (max-width : 1200px) {
+
+
+
+    .main h1 {
+
+        font-size: 11em;
+        background-size: 100% 135%;
+    }
+
+    nav a {
+
+        font-size: 0.7em;
+    }
+
+    .middle_text>h2 {
+
+        font-size: 4em;
+    }
+
+    .text {
+
+        font-size: 7em;
+    }
+
+    .svg2 {
+
+        top: 14%;
+    }
+
+    .text_h1 {
+
+        font-size: 1.8em;
+    }
+
+    .Work_smallbox {
+
+        width: 100%;
+    }
+
+    .contact_text h1 {
+
+        font-size: 2em;
+    }
+
+
+    .contact_text p {
+
+        font-size: 1.2em;
+    }
+
+    .middle_bottom {
+
+        bottom: 3%;
+    }
+
+    svg {
+
+        left: 28%;
+        top: 23%;
+
+    }
+
+    .circle_box {
+
+        left: 70%;
+    }
+}
+
+/* 992px */
+
+@media screen and (max-width : 992px) {
+
+    .main h1 {
+        font-size: 10em;
+    }
+
+    .middle_bottom {
+        bottom: 8%;
+    }
+
+    .text_h1 {
+        font-size: 1.4em;
+        line-height: 4rem;
+        height: 15%;
+    }
+
+    .About2_wrapper {
+
+        width: 100%;
+    }
+
+    .Career h1,
+    .tech h1 {
+        font-size: 2.5rem;
+    }
+
+    .Career p>span:nth-child(1),
+    .tech_text p>span:nth-child(1) {
+
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .Career p>span:nth-child(2),
+    .tech_text p>span:nth-child(2) {
+
+        display: block;
+        padding: 5% 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .About2_wrapper {
+        align-items: flex-start;
+        height: 90%;
+    }
+
+    .cover p {
+
+        font-size: 5rem;
+    }
+
+    .Work_smallbox {
+
+        width: 100%;
+    }
+
+    .left {
+        margin-left: 0;
+    }
+
+    .circle_box {
+        left: 65%;
+        top: 15%;
+    }
+
+    svg {
+        left: 35%;
+    }
+}
+
+
+/* 768px */
+@media screen and (max-width : 768px) {
+
+
+    .main h1 {
+        font-size: 8em;
+        background-size: 100% 145%;
+    }
+
+    .svg2 {
+        top: 10%;
+        width: 90%;
+        left: 6%;
+    }
+
+    .text {
+        font-size: 5em;
+    }
+
+    .Career p,
+    .tech_text p {
+
+        padding: 1% 0%;
+    }
+
+    .Work_btn>a {
+
+        width: 75px;
+        height: 75px;
+    }
+
+    .Work_btn>a>i {
+        font-size: 2em;
+    }
+
+    .Work_btn {
+
+        transform: translate(0%, 0%);
+        left: 2%;
+        top: 5%;
+        width: 22%;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .Work_smallbox>a {
+
+        width: 95%;
+        height: 100%;
+        margin: 0px auto;
+    }
+
+    .Work_img {
+
+        width: 100%;
+    }
+
+    .Work_smallbox>a>h1 {
+
+        display: none;
+    }
+
+    .contact_text p {
+
+        margin-top: 5%;
+
+
+    }
+
+
+    .contact_text {
+
+        height: auto;
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        z-index: 2;
+        transform: translate(0px, -50%);
+    }
+
+    .circle_box {
+        left: 72%;
+        top: 60%;
+
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle {
+
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .kakao {
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .circle_text {
+
+        font-size: 1em;
+
+        bottom: -31%;
+    }
+
+    svg {
+
+        display: none;
+    }
+}
