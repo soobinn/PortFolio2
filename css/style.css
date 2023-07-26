@@ -11,8 +11,6 @@ body {
 
 .wrapper {
 
-    max-width: 1600px;
-    margin: 0px auto;
     overflow: hidden;
 }
 
@@ -23,7 +21,7 @@ a {
 
 .main_wrapper {
     width: 100%;
-    height: 100vh;
+    min-height: 1000px;
     position: relative;
 }
 
@@ -66,7 +64,8 @@ header {
     position: fixed;
     top: 3%;
     z-index: 1;
-    
+    right: 0;
+
 }
 
 .altLogo,
@@ -75,6 +74,7 @@ header {
 .altLogo4 {
     position: absolute;
     top: 3%;
+    right: 0;
     z-index: 1;
 
 }
@@ -109,14 +109,14 @@ nav>ul {
 
 .main {
     width: 100%;
-    height: 100%;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .main h1 {
-    background: url("https://soobinn.github.io/PortFolio/imges/skymain2.jpg");
+    background: url(/imges/skymain2.jpg);
     background-size: 100% 120%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -153,14 +153,14 @@ nav>ul {
 
 .About1 {
     width: 100%;
-    height: 200vh;
+
     position: relative;
     overflow: hidden;
 }
 
 .About1_top {
     width: 100%;
-    height: 15%;
+    height: 300px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000 100%);
 }
 
@@ -173,14 +173,14 @@ nav>ul {
 .About1_middle {
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 1300px;
 }
 
 
 .middle_top {
 
     width: 100%;
-    height: 25%;
+    min-height: 500px;
     background: #000000;
     display: flex;
     align-items: center;
@@ -190,7 +190,7 @@ nav>ul {
 
 .middle_text {
     width: 100%;
-    height: 100%;
+    min-height: 300px;
     text-align: center;
 
 }
@@ -204,7 +204,7 @@ nav>ul {
 
     width: 100%;
     left: 0%;
-    top: 19%;
+    top: 350px;
     position: absolute;
 }
 
@@ -225,7 +225,7 @@ nav>ul {
 
     width: 100%;
     display: flex;
-    height: 80%;
+    min-height: 800px;
     background: #000000;
     align-items: center;
     justify-content: center;
@@ -236,8 +236,8 @@ nav>ul {
 .middle_img {
 
     width: 80%;
-    height: 600px;
-    background-image: url("https://soobinn.github.io/PortFolio/imges/sky.jpg");
+    min-height: 600px;
+    background-image: url(/imges/sky.jpg);
     position: absolute;
     background-attachment: fixed;
     background-position: center;
@@ -253,16 +253,18 @@ nav>ul {
     background-position: center;
     background-size: 100% 100%;
     width: 100%;
-    height: 85%;
     transition: 2s;
+    min-height: 100%;
 
 }
 
 .middle_bottom {
 
-    width: 100%;
+    min-width: 1600px;
     position: absolute;
     bottom: 0%;
+    transform: translate(-50%, 0);
+    left: 50%;
     transition: 1s;
     background-color: #701d6600;
 
@@ -321,7 +323,7 @@ nav>ul {
 .About2 {
 
     width: 100%;
-    height: 100vh;
+    min-height: 800px;
     background: black;
     display: flex;
     align-items: center;
@@ -333,7 +335,7 @@ nav>ul {
 .About2_wrapper {
     display: flex;
     align-items: center;
-    width: 90%;
+    min-width: 1600px;
     justify-content: space-around;
     height: 60%
 }
@@ -390,7 +392,16 @@ nav>ul {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    min-height: 800px;
+    justify-content: center;
+}
+
+.Work>div {
+    width: 1400px;
+    position: absolute;
+    height: 100%;
 }
 
 .Work_cover {
@@ -398,7 +409,8 @@ nav>ul {
     position: absolute;
     top: 0;
     color: #eeeeee7b;
-    height: 100%;
+    width: 100%;
+    height: 400%;
 }
 
 .cover {
@@ -429,13 +441,12 @@ nav>ul {
 }
 
 .Work_wrapper {
-
     transition: 0.5s;
     position: absolute;
     width: 100%;
-    height: 300vh;
+    height: 400%;
     top: 0px;
-    background: rgba(0, 0, 0, 0.3);
+
 }
 
 .Work_btn {
@@ -444,6 +455,7 @@ nav>ul {
     position: absolute;
     top: 50%;
     z-index: 3;
+    left: 100px;
 }
 
 .Work_btn>a {
@@ -465,18 +477,17 @@ nav>ul {
 }
 
 .Work_box {
-
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 100%;
-    height: 100vh;
+  
+    min-height: 800px;
 }
 
 
 .Work_smallbox {
-    height: 60%;
-    width: 70%;
+    height: 450px;
+    width: 80%;
     display: flex;
     align-items: center;
     position: relative;
@@ -512,18 +523,32 @@ nav>ul {
 }
 
 .img1 {
-    background-image: url('https://soobinn.github.io/PortFolio/imges/sandira.JPG');
+    background-image: url('/imges/sandira.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .img2 {
-    background-image: url('https://soobinn.github.io/PortFolio/imges/garasani.png');
+    background-image: url('/imges/garasani.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img3 {
-    background-image: url('https://soobinn.github.io/PortFolio/imges/img3.png');
+    background-image: url('/imges/chanel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .img4 {
-    background-image: url('https://soobinn.github.io/PortFolio/imges/sandira.JPG');
+    background-image: url('/imges/react.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -542,9 +567,11 @@ nav>ul {
 .garasani {
     color: #2940D3;
 }
-.Channel{
+
+.Chanel {
     color: #bb8d8d;
 }
+
 .react {
     color: #64DFDF;
 }
@@ -554,12 +581,24 @@ nav>ul {
 
 .contact {
     width: 100%;
-    height: 100vh;
-    background-image: url("https://soobinn.github.io/PortFolio/imges/contact.jpg");
+    min-height: 800px;
+    display: flex;
+    background-image: url(/imges/contact.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    justify-content: center;
+}
+
+.contact>div {
+
+    width: 1600px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
 }
 
 .contact_text {
@@ -633,7 +672,7 @@ svg {
 
 .circle_box {
     position: relative;
-    top: 25%;
+    top: 100px;
     width: 300px;
     left: 65%;
     height: 300px
