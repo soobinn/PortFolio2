@@ -116,7 +116,7 @@ nav>ul {
 }
 
 .main h1 {
-    background: url(/imges/skymain2.jpg);
+    background: url("https://soobinn.github.io/PortFolio/imges/skymain2.jpg");
     background-size: 100% 120%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -237,7 +237,7 @@ nav>ul {
 
     width: 80%;
     min-height: 600px;
-    background-image: url(/imges/sky.jpg);
+    background-image: url("https://soobinn.github.io/PortFolio/imges/sky.jpg");
     position: absolute;
     background-attachment: fixed;
     background-position: center;
@@ -523,7 +523,7 @@ nav>ul {
 }
 
 .img1 {
-    background-image: url('/imges/sandira.JPG');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/sandira.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -531,21 +531,21 @@ nav>ul {
 }
 
 .img2 {
-    background-image: url('/imges/garasani.png');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/garasani.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .img3 {
-    background-image: url('/imges/chanel.png');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/chanel.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .img4 {
-    background-image: url('/imges/react.png');
+    background-image: url('https://soobinn.github.io/PortFolio/imges/react.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -583,7 +583,7 @@ nav>ul {
     width: 100%;
     min-height: 800px;
     display: flex;
-    background-image: url(/imges/contact.jpg);
+    background-image: url("https://soobinn.github.io/PortFolio/imges/contact.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
