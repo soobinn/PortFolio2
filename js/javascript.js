@@ -126,21 +126,21 @@ window.onload = function () {
     if (clickCount == 1) {
       boxList.style.top = `-${clickCount}00%`;
       clickCount += 1;
-      console.log(clickCount);
+
     } else if (clickCount == 2) {
       boxList.style.top = `-${clickCount}00%`;
       clickCount += 1;
-      console.log(clickCount);
+   
 
     } else if (clickCount == 3) {
       boxList.style.top = `-${clickCount}00%`;
       clickCount += 1;
-      console.log(clickCount);
+     
 
     } else if (clickCount == 4) {
       boxList.style.top = `-0%`;
       clickCount = 1;
-      console.log(clickCount);
+ 
 
     }
   });
@@ -153,23 +153,23 @@ window.onload = function () {
 
       boxList.style.top = `-${clickCount - 2}00%`;
       clickCount = 3;
-      console.log(clickCount);
+   
     } else if (clickCount == 3) {
 
       boxList.style.top = `-100%`;
       clickCount = 2;
-      console.log(clickCount);
+  
 
     } else if (clickCount == 2) {
 
       boxList.style.top = `-0%`;
       clickCount = 1;
-      console.log(clickCount);
+
     } else if (clickCount == 1) {
 
       boxList.style.top = `-${clickCount + 2}00%`;
       clickCount = 4;
-      console.log(clickCount);
+
     }
 
 
