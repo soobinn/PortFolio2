@@ -53,19 +53,26 @@
 
     .middle_bottom {
         min-width: 1200px;
-        bottom: 3%;
+
     }
-    .About2_wrapper{
-        min-width:1200px;
+
+    .About2_wrapper {
+        min-width: 1200px;
     }
-    .Work>div,.contact>div{
+
+    .Work>div {
         width: 1200px;
+    }
+
+    .contact>div {
+        min-width: 1200px;
 
     }
 
-    .Work_btn{
+    .Work_btn {
         left: 0;
     }
+
     svg {
 
         left: 28%;
@@ -132,9 +139,14 @@
         font-size: 5rem;
     }
 
-    .Work>div, .contact>div {
+    .Work>div {
         width: 992px;
     }
+
+    .contact>div {
+        min-width: 992px;
+    }
+
     .Work_smallbox {
 
         width: 100%;
@@ -173,22 +185,36 @@
     .text {
         font-size: 5em;
     }
-    .middle_bottom{
+
+    .middle_bottom {
 
         min-width: 767px;
     }
+
+    .text_h1,
+    .text1_p {
+        padding: 3%;
+    }
+
     .About2_wrapper {
-  
+
         min-width: 767px;
     }
+
     .Career p,
     .tech_text p {
 
         padding: 1% 0%;
     }
-    .Work>div, .contact>div {
+
+    .Work>div {
         width: 767px;
     }
+
+    .contact>div {
+        min-width: 767px;
+    }
+
     .Work_btn>a {
 
         width: 75px;
@@ -235,6 +261,9 @@
 
     }
 
+    .contact {
+        min-height: 600px;
+    }
 
     .contact_text {
 
@@ -248,8 +277,7 @@
 
     .circle_box {
         left: 72%;
-        top: 60%;
-
+        top: 50%;
         width: 200px;
         height: 200px;
     }

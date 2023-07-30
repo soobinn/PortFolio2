@@ -319,7 +319,7 @@ nav>ul {
 .About2 {
 
     width: 100%;
-    min-height: 800px;
+   height: 100vh;
     background: black;
     display: flex;
     align-items: center;
@@ -333,7 +333,7 @@ nav>ul {
     align-items: center;
     min-width: 1400px;
     justify-content: space-around;
-    height: 60%
+    /* height: 60% */
 }
 
 .About2_img,
@@ -577,7 +577,7 @@ nav>ul {
 
 .contact {
     width: 100%;
-    min-height: 800px;
+    height: 100vh;
     display: flex;
     background-image: url("https://soobinn.github.io/PortFolio/imges/contact.jpg");
     background-position: center;
@@ -622,7 +622,7 @@ nav>ul {
 
 svg {
     width: 40%;
-    left: 29%;
+    left: 26%;
     top: 24%;
     position: absolute;
 }
