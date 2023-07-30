@@ -197,7 +197,7 @@
     }
 
     .About2_wrapper {
-
+        max-height: 500px;
         min-width: 767px;
     }
 
