@@ -308,3 +308,58 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width : 576px) {
+    .main h1 {
+        font-size: 6em;
+        background-size: 100% 170%;
+    }
+
+    .middle_text>h2 {
+        font-size: 3em;
+    }
+    .text {
+        font-size: 4em;
+    }
+    .middle_bottom {
+        bottom: -5%;
+        min-width: 576px;
+    }
+    .text_h1, .text1_p {
+        padding: 3%;
+    }
+    .text_h1 {
+        font-size: 1em;
+        line-height: 3rem;
+        height: 10%;
+    }
+
+    .text1_p1 {
+        font-size: 1.2em;
+    }
+    .text1_p2 {
+        margin-top: 10%;
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    .Work>div {
+        width: 576px;
+    }
+    .Work_btn {
+        top: 5%;
+        width: 30%;
+    }
+    .contact>div {
+        min-width: 576px;
+        height: 100%;
+    }
+
+    .circle_box {
+        top: 65%;
+        width: 200px;
+        height: 200px;
+        left: 60%;
+    }
+}
