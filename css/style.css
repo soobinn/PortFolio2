@@ -395,7 +395,7 @@ nav>ul {
 }
 
 .Work>div {
-    min-width: 1600px;
+    width: 1600px;
     position: absolute;
     height: 100%;
 }
