@@ -7,7 +7,7 @@
     .main h1 {
 
         font-size: 11em;
-        background-size: 100% 135%;
+        background-size: 100% 135% !important;
     }
 
     nav a {
@@ -15,12 +15,12 @@
         font-size: 0.7em;
     }
 
-    .middle_text>h2 {
+    .About1 .About1_middle .middle_top .middle_text>h2 {
 
         font-size: 4em;
     }
 
-    .text {
+    .About1 .About1_middle .middle_top .middle_text .text {
 
         font-size: 7em;
     }
@@ -35,28 +35,28 @@
         font-size: 1.8em;
     }
 
-    .Work_smallbox {
+    .Work>div .Work_wrapper .Work_box .Work_smallbox {
 
         width: 100%;
     }
 
-    .contact_text h1 {
+    .contact>div .contact_text h1 {
 
         font-size: 2em;
     }
 
 
-    .contact_text p {
+    .contact>div .contact_text p {
 
         font-size: 1.2em;
     }
 
-    .middle_bottom {
+    .About1 .middle_bottom {
         min-width: 1200px;
 
     }
 
-    .About2_wrapper {
+    .About2 .About2_wrapper {
         min-width: 1200px;
     }
 
@@ -69,13 +69,13 @@
 
     }
 
-    .Work_btn {
+    .Work>div .Work_btn {
         left: 0;
     }
 
-    svg {
+    .contact>div svg {
 
-        left: 28%;
+        left: 35%;
         top: 23%;
 
     }
@@ -94,25 +94,25 @@
         font-size: 10em;
     }
 
-    .middle_bottom {
+    .About1 .middle_bottom {
         bottom: 0%;
         min-width: 992px;
     }
 
-    .text_h1 {
+    .About1 .middle_bottom .text_h1 {
         font-size: 1.4em;
         line-height: 4rem;
         height: 15%;
     }
 
-    .About2_wrapper {
+    .About2 .About2_wrapper {
         align-items: flex-start;
         height: 90%;
         min-width: 992px;
     }
 
-    .Career h1,
-    .tech h1 {
+    .About2 .About2_wrapper .Career h1,
+    .About2 .About2_wrapper .tech h1 {
         font-size: 2.5rem;
     }
 
@@ -147,7 +147,7 @@
         min-width: 992px;
     }
 
-    .Work_smallbox {
+    .Work>div .Work_wrapper .Work_box .Work_smallbox {
 
         width: 100%;
     }
@@ -156,13 +156,13 @@
         margin-left: 0;
     }
 
-    .circle_box {
+    .contact>div .circle_box {
         left: 65%;
         top: 15%;
     }
 
-    svg {
-        left: 35%;
+    .contact>div svg {
+        display: none;
     }
 }
 
@@ -173,36 +173,34 @@
 
     .main h1 {
         font-size: 8em;
-        background-size: 100% 145%;
+        background-size: 100% 145% !important;
     }
 
-    .svg2 {
-        top: 10%;
-        width: 90%;
-        left: 6%;
+    .About1 .About1_middle .middle_top .middle_text .svg2 {
+        display: none;
     }
 
-    .text {
+    .About1 .About1_middle .middle_top .middle_text .text {
         font-size: 5em;
     }
 
-    .middle_bottom {
+    .About1 .middle_bottom {
 
         min-width: 767px;
     }
 
-    .text_h1,
-    .text1_p {
+    .About1 .middle_bottom .text_h1,
+    .About1 .middle_bottom .text1_p {
         padding: 3%;
     }
 
-    .About2_wrapper {
+    .About2 .About2_wrapper {
         max-height: 500px;
         min-width: 767px;
     }
 
-    .Career p,
-    .tech_text p {
+    .About2 .About2_wrapper .Career p,
+    .About2 .About2_wrapper .tech_text p {
 
         padding: 1% 0%;
     }
@@ -215,21 +213,21 @@
         min-width: 767px;
     }
 
-    .Work_btn>a {
+    .Work>div .Work_btn>a {
 
         width: 75px;
         height: 75px;
     }
 
-    .Work_btn>a>i {
+    .Work>div .Work_btn>a>i {
         font-size: 2em;
     }
 
-    .Work_btn {
+    .Work>div .Work_btn {
 
         transform: translate(0%, 0%);
         left: 2%;
-        top: 0%;
+        top: 5%;
         width: 22%;
         display: flex;
         align-items: center;
@@ -254,7 +252,7 @@
         display: none;
     }
 
-    .contact_text p {
+    .contact>div .contact_text p {
 
         margin-top: 5%;
 
@@ -265,7 +263,7 @@
         min-height: 600px;
     }
 
-    .contact_text {
+    .contact>div .contact_text {
 
         height: auto;
         position: absolute;
@@ -275,35 +273,35 @@
         transform: translate(0px, -50%);
     }
 
-    .circle_box {
+    .contact>div .circle_box {
         left: 72%;
         top: 50%;
         width: 200px;
         height: 200px;
     }
 
-    .circle {
+    .contact>div .circle_box .circle {
 
         width: 200px;
         height: 200px;
     }
 
 
-    .kakao {
+    .contact>div .circle_box .kakao {
 
         width: 100px;
         height: 100px;
     }
 
 
-    .circle_text {
+    .contact>div .circle_box .circle_text {
 
         font-size: 1em;
 
         bottom: -31%;
     }
 
-    svg {
+    .contact>div svg {
 
         display: none;
     }
@@ -313,50 +311,72 @@
 @media screen and (max-width : 576px) {
     .main h1 {
         font-size: 6em;
-        background-size: 100% 170%;
+        background-size: 100% 170% !important;
     }
 
-    .middle_text>h2 {
+    .About1 .About1_middle .middle_top .middle_text>h2 {
         font-size: 3em;
     }
-    .text {
+
+    .About1 .About1_middle .middle_top .middle_text .text {
         font-size: 4em;
     }
-    .middle_bottom {
-        bottom: -5%;
+
+    .About1 .middle_bottom {
+        bottom: 0%;
         min-width: 576px;
     }
-    .text_h1, .text1_p {
-        padding: 3%;
+
+    .About1 .middle_bottom .text_h1,
+    .About1 .middle_bottom .text1_p {
+        padding: 5% 2%;
     }
-    .text_h1 {
+
+    .About1 .middle_bottom .text_h1 {
         font-size: 1em;
         line-height: 3rem;
         height: 10%;
     }
 
-    .text1_p1 {
+    .About1 .middle_bottom .text1_p .text1_p1 {
         font-size: 1.2em;
     }
+
     .text1_p2 {
         margin-top: 10%;
         font-size: 1em;
         line-height: 25px;
     }
 
+    .About2 .About2_wrapper {
+        min-width: 450px;
+    }
+
+    .About2 .About2_wrapper .Career h1,
+    .About2 .About2_wrapper .tech h1 {
+        font-size: 1.5rem;
+    }
+
     .Work>div {
         width: 576px;
     }
-    .Work_btn {
+
+    .Work>div .Work_wrapper .Work_box .Work_smallbox>a .Work_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Work>div .Work_btn {
         top: 5%;
         width: 30%;
     }
+
     .contact>div {
         min-width: 576px;
         height: 100%;
     }
 
-    .circle_box {
+    .contact>div .circle_box {
         top: 65%;
         width: 200px;
         height: 200px;

@@ -1,0 +1,808 @@
+body {
+    margin: 0;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+
+    overflow: hidden;
+}
+
+a {
+    display: block;
+    color: inherit;
+}
+
+@mixin size($w: null, $h: null, $p: null, $t: null, $b: null, $l: null, $r: null) {
+
+    width: $w;
+    height: $h;
+    position: $p;
+    top: $t;
+    bottom: $b;
+    left: $l;
+    right: $r;
+    @content
+}
+
+;
+
+@mixin display($d: null, $a: null, $j: null, $f: null) {
+
+    display: $d;
+    align-items: $a;
+    justify-content: $j;
+    float: $f;
+
+    @content
+}
+
+;
+
+header {
+
+    @include size($w: 100%, $h: 150px, $p: absolute) {
+
+        z-index: 1;
+
+    }
+
+    ;
+}
+
+;
+
+.menu {
+
+    @include size($w: 100%, $h: 100%) {
+        margin: 0px auto;
+    }
+
+    ;
+}
+
+;
+
+.logo {
+
+    @include size($w: 150px, $h: 150px) {
+        float: left;
+
+    }
+
+    ;
+}
+
+;
+
+.row {
+
+    @include size($w: 100%, $p: relative) {
+
+        min-height: 95vh;
+        overflow: hidden;
+
+    }
+}
+
+;
+
+.startLogo {
+
+    @include size($t: 3%, $r: 0, $p: fixed) {
+
+        z-index: 1;
+
+    }
+
+    ;
+}
+
+;
+
+// @for $i from 1 through 4 {
+
+// .row:nth-child(#{$i})>.logo{
+
+//     color: white;
+// }
+
+// }
+
+
+.altLogo,
+%title-type {
+    @include size($t: 3%, $r: 0, $p: absolute) {
+        z-index: 1;
+    }
+}
+
+.altLogo2,
+.altLogo3,
+.altLogo4 {
+    @extend %title-type;
+}
+
+
+.white,
+%title-color {
+
+    color: white;
+}
+
+.white2,
+.white3,
+.white4 {
+
+    @extend %title-color
+}
+
+.black {
+    color: #1d1d1d;
+}
+
+nav {
+
+    @include display($f: right);
+    @include size($w: 150px);
+    text-align: center;
+
+    a {
+
+        padding: 7%;
+    }
+
+    >ul {
+        width: 100%;
+    }
+
+}
+
+.main {
+
+    @include size($w: 100%, $h: 100vh);
+    @include display($d: flex, $a: center, $j: center);
+
+    h1 {
+
+        background: {
+            size: 100% !important;
+            repeat: no-repeat;
+            clip: text;
+        }
+
+        ;
+        background: url("https://soobinn.github.io/PortFolio/imges/skymain2.jpg");
+
+        font: {
+            size: 17em;
+            weight: 900;
+        }
+
+        ;
+        -webkit-text-fill-color: transparent;
+        animation: animate 2s linear Infinite Alternate;
+        -webkit-background-clip: text;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px -80px;
+    }
+
+    ;
+
+    50% {
+        background-position: 0px -10px;
+    }
+
+    ;
+
+    100% {
+        background-position: 0px -80px;
+    }
+
+    ;
+}
+
+// about1
+
+.About1 {
+
+    @include size($w: 100%, $p: relative) {
+        overflow: hidden;
+    }
+
+    ;
+
+    .About1_top {
+        @include size($w: 100%, $h: 300px) {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000 100%);
+        }
+
+        ;
+
+    }
+
+    ;
+
+    .About1_middle {
+        @include size($w: 100%, $p: relative) {
+            min-height: 1300px;
+        }
+
+        ;
+
+        .middle_top {
+
+            @include display($d: flex, $a: center, $j: center);
+            width: 100%;
+            min-height: 500px;
+            background: #000000;
+
+
+            .middle_text {
+                width: 100%;
+                min-height: 300px;
+                text-align: center;
+
+                .text {
+                    position: relative;
+                    color: rgb(255, 255, 255);
+                    font-size: 10em;
+                    font-style: italic;
+                }
+
+                >h2 {
+                    color: #fff;
+                    font-size: 5em;
+                }
+
+                .svg2 {
+
+                    @include size($l: 0%, $t: 350px, $p: absolute);
+                    width: 100%;
+                }
+
+                .svgline {
+
+                    stroke-dasharray: 406;
+                    stroke-dashoffset: 406;
+                    animation: 4s linear forwards;
+                }
+
+                @keyframes line {
+                    to {
+                        stroke-dashoffset: 0;
+                    }
+                }
+            }
+        }
+
+        ;
+
+    }
+
+    ;
+
+    .middle_middle {
+
+        @include size($w: 100%, $p: absolute);
+        @include display($d: flex, $a: center, $j: center);
+        min-height: 800px;
+        background-color: #000;
+
+        .middle_img {
+            width: 80%;
+            min-height: 600px;
+            position: absolute;
+
+            background: {
+                attachment: fixed;
+                position: center;
+                repeat: no-repeat;
+                size: cover;
+            }
+
+            ;
+            transition: 2s;
+            background-image: url("https://soobinn.github.io/PortFolio/imges/sky.jpg");
+
+        }
+
+        ;
+
+        .fixed {
+
+            background: {
+                attachment: fixed;
+                position: center;
+                size: 100% 100%;
+            }
+
+            ;
+            position: absolute;
+            transition: 2s;
+            min-height: 100%;
+            width: 100%;
+
+        }
+    }
+
+    ;
+
+    .middle_bottom {
+
+        @include size($p: absolute, $b: 0%, $l: 50%);
+        min-width: 1600px;
+        transition: 1s;
+        background-color: #701d6600;
+        transform: translate(-50%, 0);
+
+        .bottom_text {
+            @include size($w: 100%, $h: 100%);
+        }
+
+        .text_h1 {
+            font-size: 2.1em;
+            height: 20%;
+            line-height: 6rem;
+
+        }
+
+        .text_h1,
+        %title_p {
+
+            padding: 3% 5% 4% 15%;
+            color: white;
+        }
+
+        .text1_p {
+
+            @extend %title_p;
+
+            .text1_p1 {
+                width: 95%;
+                font-size: 1.6em;
+                font-weight: bold;
+                height: 21%;
+
+            }
+
+            .text1_p2 {
+                width: 95%;
+                font-size: 1.2em;
+                margin-top: 20px;
+                line-height: 35px;
+            }
+        }
+
+    }
+}
+
+;
+
+
+.About2 {
+
+
+    @include size($w: 100%, $h: 100vh);
+    @include display($d: flex, $a: center, $j: center);
+    background-color: #000;
+    color: #fff;
+
+    .About2_wrapper {
+        @include display($d: flex, $a: center, $j: space-around);
+        min-width: 1400px;
+
+        .About2_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .About2_img,
+        %title_box {
+            @include size($w: 30%, $h: 100%) {}
+
+
+            ;
+        }
+
+        .About2_img>img {
+            width: 70%;
+        }
+
+        ;
+
+
+        .Career {
+            p>span:nth-child(1) {
+                padding: 0 5%;
+                margin: 0px 20px 0px 0px;
+                border: 1px solid;
+            }
+
+
+            p {
+                font-size: 1.2em;
+                padding: 3% 0%;
+            }
+        }
+
+        h1:nth-child(2) {
+            padding-top: 5%;
+        }
+
+        .Career,
+        .tech {
+
+            @extend %title_box;
+
+            h1 {
+                font-size: 4rem
+            }
+
+            ;
+        }
+
+        ;
+
+        .text1_p1 p {
+            font-size: 1.2em;
+        }
+
+        .tech_text {
+
+            p {
+                font-size: 1.2em;
+                padding: 3% 6%;
+            }
+
+            p>span:nth-child(1) {
+                padding: 0 5%;
+                margin: 0px 20px 0px 0px;
+                border: 1px solid;
+            }
+        }
+    }
+
+
+}
+
+
+.Work {
+
+
+    @include size($w: 100%, $h: 100vh, $p: relative);
+    @include display($d: flex, $j: center);
+    background-color: #000;
+    overflow: hidden;
+
+    >div {
+        @include size($w: 1600px, $h: 100%, $p: absolute);
+
+        .Work_cover {
+            @include size($w: 100%, $t: 50%, $p: absolute);
+            transform: translate(0, -50%);
+            background-color: #000000;
+            color: #eeeeee7b;
+
+            .cover {
+                width: 100vw;
+                margin-bottom: 50px;
+                display: flex;
+
+                >p {
+                    display: flex;
+                    font-weight: bold;
+                    font-size: 8rem;
+                }
+
+                ;
+            }
+
+            ;
+
+            .cover:nth-child(1) {
+                margin-top: 70px
+            }
+
+            .cover:nth-child(2) {
+
+                justify-content: flex-end;
+
+                p {
+                    color: black;
+                    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.221);
+                }
+            }
+        }
+
+        ;
+
+        .Work_wrapper {
+            @include size($w: 100%, $h: 400%, $p: absolute, $t: 0px);
+
+            transition: 0.5s;
+
+            .Work_box {
+                @include display($d: flex, $a: center, $j: center);
+
+                height: calc(100% / 4);
+
+                .Work_smallbox {
+                    @include size($w: 80%, $h: 450px, $p: relative);
+                    @include display($d: flex, $a: center, $j: space-between);
+
+                    >a {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        @include display($d: flex, $a: baseline, $j: center);
+
+                        >h1 {
+                            height: 20%;
+                            width: 150px;
+
+                            >span:nth-child(1) {
+                                font-size: 1.5em;
+                            }
+
+                            >span:nth-child(2) {
+                                color: black;
+                                -webkit-text-stroke: 1px rgb(255, 255, 255);
+                            }
+
+                            ;
+                        }
+
+                        ;
+
+                        .Work_img {
+
+                            width: 75%;
+                            height: 100%;
+
+
+                        }
+
+                        @for $i from 1 through 4 {
+
+                            .img#{$i} {
+                                background: {
+                                    position: center;
+                                    repeat: no-repeat;
+                                    size: cover;
+                                    image: url('https://soobinn.github.io/PortFolio/imges/work(#{$i}).png');
+
+                                }
+
+                            }
+                        }
+                    }
+
+                    ;
+
+                    >span {
+
+                        @include size($b: -20px, $r: 80px, $p: absolute) {
+                            font-size: 2rem;
+                            z-index: 3;
+                        }
+
+                        ;
+
+                    }
+
+                    .sandria {
+                        color: #9AE66E;
+                    }
+
+                    .garasani {
+                        color: #2940D3;
+                    }
+
+                    .Chanel {
+                        color: #bb8d8d;
+                    }
+
+                    .react {
+                        color: #64DFDF;
+                    }
+                }
+            }
+        }
+
+        .Work_btn {
+            @include size($w: 20%, $p: absolute, $l: 100px, $t: 50%);
+
+            transform: translate(0%, -50%);
+            z-index: 3;
+
+            >a {
+                @include display($d: flex, $a: center, $j: center);
+                width: 100px;
+                text-align: center;
+                height: 100px;
+                background-color: rgba(210, 210, 210, 0.768);
+                line-height: 80px;
+                margin: 10px auto;
+                border-radius: 50%;
+
+                >i {
+                    font-size: 3em;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+    }
+
+    ;
+
+    ;
+
+
+
+}
+
+/* .contact */
+
+.contact {
+    @include size($w: 100%, $h: 100vh, $p: relative);
+    @include display($d: flex, $j: center);
+
+    background: {
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        image: url("https://soobinn.github.io/PortFolio/imges/contact.jpg");
+    }
+
+    ;
+
+    >div {
+        @include size($t: 50%, $h: 500px, $p: absolute);
+        min-width: 1400px;
+        transform: translate(0, -50%);
+
+        .contact_text {
+            @include size($t: 25%, $h: 50%, $p: absolute, $l: 5%);
+            z-index: 2;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            ;
+
+            p {
+                margin-top: 15%;
+                font-size: 1.5rem;
+            }
+
+            ;
+
+            span {
+                font-size: 2em;
+                color: white;
+                -webkit-text-stroke: 1px rgb(0, 0, 0);
+            }
+
+            ;
+
+        }
+
+        ;
+
+        svg {
+            @include size($t: 24%, $w: 40%, $p: absolute, $l: 29%);
+
+            .svg_arrow {
+                stroke-dasharray: 1243px;
+                stroke-dashoffset: 1243;
+                animation: 1s linear forwards;
+            }
+
+            .svg_arrow2 {
+                stroke-dasharray: 84;
+                stroke-dashoffset: 84;
+                animation: 1.2s linear forwards;
+            }
+        }
+
+        @keyframes ani {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes ani2 {
+            to {
+                stroke-dashoffset: 1243;
+            }
+        }
+
+        @keyframes ani3 {
+            to {
+                stroke-dashoffset: 84;
+            }
+        }
+
+        .circle_box {
+            @include size($w: 300px, $t: 100px, $h: 300px, $p: relative, $l: 65%);
+
+            .circle {
+                @include size($w: 300px, $h: 300px, $p: absolute);
+
+                animation: circle 8s linear;
+                animation-iteration-count: infinite;
+                transform-origin: center;
+            }
+
+            .circle img,
+            .kakao img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .kakao {
+                @include size($w: 150px, $t: 50%, $h: 150px, $p: absolute, $l: 50%);
+                transform: translate(-50%, -50%);
+
+            }
+
+
+            @keyframes circle {
+
+                0% {
+                    transform: rotate(0deg)
+                }
+
+                50% {
+                    transform: rotate(180deg)
+                }
+
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+
+
+            .circle_text {
+
+                @include size($w: 100%, $p: absolute, $b: -22%);
+
+                text-align: center;
+
+                font-size: 1.3em;
+
+            }
+
+        }
+    }
+
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: #000;
+    color: #fff;
+}
